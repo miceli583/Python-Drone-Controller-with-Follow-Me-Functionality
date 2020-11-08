@@ -1,0 +1,2 @@
+This project utilizes python socket programming, OpenCV for facial recgonition, and flask in combination with the Tello Edu Drone's SDK
+to create a mobile web app that allows the user to control the drone remotely and activate autonomous facial tracking
