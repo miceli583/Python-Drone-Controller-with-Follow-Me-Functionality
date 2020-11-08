@@ -1,10 +1,10 @@
 import cv2 as cv
 
 face_cascade = cv.CascadeClassifier(
-    r'C:\Users\micel\OneDrive\Documents\CodeSpace\Native\PyDrone\CVTools\haarcascade_frontalface_default.xml')
+    r'tools\haarcascade_frontalface_default.xml')
 
 cap = cv.VideoCapture(0)
-cap.open(r'C:\Users\micel\OneDrive\Documents\CodeSpace\Native\PyDrone\CVTools\Video Of People Walking.mp4')
+cap.open(r'tools\Video Of People Walking.mp4')
 
 while(cap.isOpened()):
     ret, frame = cap.read()
