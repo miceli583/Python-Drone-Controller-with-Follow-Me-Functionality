@@ -1,16 +1,15 @@
 import cv2 as cv
 
 face_cascade = cv.CascadeClassifier(
-    r'C:\Users\micel\OneDrive\Documents\CodeSpace\Native\PyDrone\CVTools\haarcascade_frontalface_default.xml')
+    r'tools\haarcascade_frontalface_default.xml')
 eye_cascade = cv.CascadeClassifier(
-    r'C:\Users\micel\OneDrive\Documents\CodeSpace\Native\PyDrone\CVTools\haarcascade_eye.xml')
+    r'tools\haarcascade_eye.xml')
 
 img = cv.imread(
-    r'C:\Users\micel\OneDrive\Documents\CodeSpace\Native\PyDrone\CVTools\image1.jpg')
+    r'tools\image1.jpg')
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.15, 5)
-# original ->    faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 print(len(faces))
 
 for (x, y, w, h) in faces:
