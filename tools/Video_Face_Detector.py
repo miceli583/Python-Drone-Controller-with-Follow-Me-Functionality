@@ -1,9 +1,9 @@
 import cv2 as cv
 
 face_cascade = cv.CascadeClassifier(
-    r'C:\Users\micel\OneDrive\Documents\CodeSpace\Native\PyDrone\CVTools\haarcascade_frontalface_default.xml')
+    r'tools\haarcascade_frontalface_default.xml')
 eye_cascade = cv.CascadeClassifier(
-    r'C:\Users\micel\OneDrive\Documents\CodeSpace\Native\PyDrone\CVTools\haarcascade_eye.xml')
+    r'tools\haarcascade_eye.xml')
 
 cap = cv.VideoCapture(0)
 print(cap.isOpened())
